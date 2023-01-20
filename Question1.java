@@ -62,7 +62,14 @@ class ExpressionChecker
                     return false;
             }
             else if(c==')')
-                popTillParen();
+            {
+                try{
+                    popTillParen();
+                }catch(ArrayIndexOutOfBoundsException ex)
+                {
+                    return false;
+                }
+            }
             else
             {
                 isValid = false;
