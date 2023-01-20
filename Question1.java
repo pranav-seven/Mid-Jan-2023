@@ -1,4 +1,5 @@
 //Checks addition, subtraction, multiplication and division
+//checks only expressions enclosed in parenthesis
 class Question1 {
     ExpressionChecker expCheck;
     public static void main(String[] args) {
